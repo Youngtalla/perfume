@@ -1,0 +1,210 @@
+:root {
+    --black: #0D0D0D;
+    --gold: #D4AF37;
+    --dark-green: #0F3D2E;
+    --cream: #F8F4EC;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--black);
+    color: var(--cream);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand {
+    font-family: 'Cinzel', serif;
+}
+
+.btn-gold {
+    background-color: var(--gold);
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background-color: #c19a2e;
+    color: #000;
+}
+
+.product-card {
+    background: rgba(15, 61, 46, 0.7);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    transition: all 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px -12px rgb(212 175 55 / 20%);
+    border-color: var(--gold);
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://picsum.photos/id/1015/1920/1080') center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.glass {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212,175,55,0.2);
+}
+
+/* ====================== AUTH PAGES ====================== */
+.auth-container {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0D0D0D 0%, #0F3D2E 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-card {
+    background: rgba(15, 61, 46, 0.85);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 60%);
+    border-radius: 20px;
+}
+
+.auth-card h2 {
+    font-family: 'Cinzel', serif;
+    color: #D4AF37;
+    font-weight: 700;
+}
+
+.auth-input {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: #F8F4EC;
+    border-radius: 12px;
+    padding: 14px 18px;
+    transition: all 0.3s;
+}
+
+.auth-input:focus {
+    border-color: #D4AF37;
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+    outline: none;
+}
+
+.auth-btn {
+    background: linear-gradient(90deg, #D4AF37, #f0d47a);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    transition: all 0.4s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.auth-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+}
+
+/* Background decoration */
+.auth-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -30%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+/* ====================== LOGIN & REGISTER STYLING ====================== */
+.auth-container {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #0D0D0D 0%, #0F3D2E 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.auth-card {
+    background: rgba(15, 61, 46, 0.92);
+    backdrop-filter: blur(20px);
+    border: 2px solid #D4AF37;
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+    padding: 50px 40px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.auth-card h2 {
+    font-family: 'Cinzel', serif;
+    color: #D4AF37;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.auth-card p {
+    color: #F8F4EC;
+    opacity: 0.9;
+}
+
+.auth-input {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(212,175,55,0.4);
+    color: white;
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+}
+
+.auth-input:focus {
+    border-color: #D4AF37;
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 0 0 4px rgba(212,175,55,0.2);
+    outline: none;
+}
+
+.auth-btn {
+    background: linear-gradient(to right, #D4AF37, #E8C670);
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.4s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.5);
+}
+
+.gold-link {
+    color: #D4AF37;
+    font-weight: 500;
+}
+
+.gold-link:hover {
+    color: #f0d47a;
+}
+
+.hover-effect {
+    transition: all 0.3s;
+}
+.hover-effect:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3) !important;
+}
